@@ -27,6 +27,7 @@ def page(path, title, description, body):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(description)}">
+<meta name="google-site-verification" content="F2sSLz3GuPwt_C3BkwWSnTi81Ip2itNgBJjz8FT71gg">
 <link rel="icon" href="{up}assets/icon.png">
 <link rel="stylesheet" href="{up}assets/style.css">
 </head>
