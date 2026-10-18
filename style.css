@@ -1,0 +1,21 @@
+:root { --bg: #0b0b0b; --fg: #e7e4da; --muted: #999b96; --accent: #f46c32; --line: #26262a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main, header, footer { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+header { display: flex; align-items: center; justify-content: space-between; padding-top: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+header a.brand { color: var(--fg); text-decoration: none; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 20px; }
+nav a:hover, a { color: var(--accent); }
+h1 { font-size: 2.6rem; line-height: 1.1; margin: 48px 0 8px; letter-spacing: .02em; }
+h2 { font-size: 1.4rem; margin: 40px 0 8px; }
+.rule { width: 48px; height: 4px; background: var(--accent); margin: 16px 0 24px; }
+.lead { color: var(--muted); font-size: 1.15rem; }
+.dials { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 32px 0; }
+.dials img { width: 100%; height: auto; border-radius: 50%; }
+ul { padding-left: 1.2em; }
+li { margin: 4px 0; }
+.app { display: flex; gap: 20px; align-items: center; padding: 20px; border: 1px solid var(--line); border-radius: 16px; margin: 24px 0; text-decoration: none; color: var(--fg); }
+.app img { width: 88px; height: 88px; border-radius: 50%; }
+.app span { color: var(--muted); display: block; }
+footer { color: var(--muted); font-size: .9rem; padding-top: 32px; padding-bottom: 48px; margin-top: 56px; border-top: 1px solid var(--line); }
+@media (max-width: 520px) { h1 { font-size: 2rem; } nav a { margin-left: 12px; } }
