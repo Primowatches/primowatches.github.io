@@ -38,7 +38,7 @@ def page(path, title, description, body):
 <main>
 {body.replace('{up}', up)}
 </main>
-<footer>© 2026 {BRAND} · Bergen, Norway · <a href="{up}privacy.html">Privacy policy</a> · <a href="mailto:{EMAIL}">{EMAIL}</a></footer>
+<footer>© 2026 {BRAND} · <a href="{up}privacy.html">Privacy policy</a> · <a href="mailto:{EMAIL}">{EMAIL}</a></footer>
 </body>
 </html>
 '''
@@ -132,7 +132,7 @@ def privacy():
 <p>If this policy changes, the new version is published on this page with a new date.</p>
 
 <h2>Contact</h2>
-<p>{BRAND}, Bergen, Norway. Email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>''')
+<p>{BRAND}. Email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>''')
 
 
 if __name__ == '__main__':
