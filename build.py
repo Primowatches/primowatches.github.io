@@ -28,6 +28,7 @@ def page(path, title, description, body):
 <title>{escape(title)}</title>
 <meta name="description" content="{escape(description)}">
 <meta name="google-site-verification" content="F2sSLz3GuPwt_C3BkwWSnTi81Ip2itNgBJjz8FT71gg">
+<meta name="google-site-verification" content="0I45dqfzrLrNNodKksoEg44V1YR8bqElhHY7i-KYdTE">
 <link rel="icon" href="{up}assets/icon.png">
 <link rel="stylesheet" href="{up}assets/style.css">
 </head>
