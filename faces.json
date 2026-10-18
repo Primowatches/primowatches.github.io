@@ -1,0 +1,33 @@
+{
+  "brand": "Primowatches",
+  "tagline": "Watch faces for Wear OS, made in Bergen, Norway.",
+  "email": "primowatch3s@gmail.com",
+  "faces": [
+    {
+      "slug": "relief",
+      "name": "Relief",
+      "tagline": "Milled digital watch face",
+      "status": "coming",
+      "play": "https://play.google.com/store/apps/details?id=com.relief.watchface",
+      "intro": "A milled digital watch face for Wear OS. Large time, deep pockets for your data, and a surface you choose.",
+      "images": [
+        ["cover.webp", "Relief in orange"],
+        ["blue-perlage.webp", "Relief in blue on perlage"],
+        ["green-carbon.webp", "Relief in green on carbon"],
+        ["plate-colour.webp", "Relief with a yellow plate"],
+        ["minimal.webp", "Relief, minimal layout in pink"],
+        ["aod.webp", "Relief always-on display, dimmed with frames"]
+      ],
+      "features": [
+        "8 complication slots: any data from any app on your watch",
+        "Built-in weather, UV index, chance of rain, today's high and low, or nothing at all in empty fields",
+        "7 accent colours and 10 surfaces: brushed, sunburst, perlage, Côtes de Genève, carbon and more",
+        "Hour colour, plate tint and rim marks",
+        "12 or 24 hours, following your watch",
+        "5 always-on styles, dimmed to 30, 45 or 60 %",
+        "36 languages"
+      ],
+      "requires": "Wear OS 5 or newer"
+    }
+  ]
+}

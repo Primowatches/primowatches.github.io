@@ -19,3 +19,16 @@ li { margin: 4px 0; }
 .app span { color: var(--muted); display: block; }
 footer { color: var(--muted); font-size: .9rem; padding-top: 32px; padding-bottom: 48px; margin-top: 56px; border-top: 1px solid var(--line); }
 @media (max-width: 520px) { h1 { font-size: 2rem; } nav a { margin-left: 12px; } }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; margin: 24px 0; }
+.card { display: block; padding: 20px; border: 1px solid var(--line); border-radius: 18px; color: var(--fg); text-decoration: none; transition: border-color .15s; }
+.card:hover { border-color: var(--accent); }
+.card img { width: 100%; height: auto; display: block; margin-bottom: 14px; }
+.card strong { display: block; font-size: 1.2rem; }
+.card span { display: block; color: var(--muted); }
+.card em { display: inline-block; margin-top: 8px; font-style: normal; font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.badge, .button { display: inline-block; padding: 10px 18px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+.badge { border: 1px solid var(--line); color: var(--muted); }
+.button { background: var(--accent); color: #0b0b0b; }
+.crumb { margin: 32px 0 -36px; color: var(--muted); }
+.crumb a { color: var(--muted); text-decoration: none; }
+.dials img { border-radius: 0; }
