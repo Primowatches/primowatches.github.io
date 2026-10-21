@@ -35,7 +35,7 @@ def page(path, title, description, body):
 <body>
 <header>
   <a class="brand" href="{up or './'}">{BRAND}</a>
-  <nav><a href="{up or './'}#watchfaces">Watch faces</a><a href="{up}privacy.html">Privacy</a><a href="{up or './'}#contact">Contact</a></nav>
+  <nav><a href="{up or './'}#watchfaces">Watch faces</a><a href="{up}install.html">Install</a><a href="{up}privacy.html">Privacy</a><a href="{up or './'}#contact">Contact</a></nav>
 </header>
 <main>
 {body.replace('{up}', up)}
@@ -102,6 +102,9 @@ def face(f):
 <h2>Requirements</h2>
 <p>{escape(f["requires"])}: Samsung Galaxy Watch4 and later, Google Pixel Watch, OnePlus Watch 2 and later, and other Wear OS watches with a round screen.</p>
 
+<h2>Install and customise</h2>
+<p>Can't find {escape(f["name"])} on your watch after buying it? See <a href="{{up}}install.html">how to install and set a watch face</a>.</p>
+
 <h2>Support</h2>
 <p>Email <a href="mailto:{EMAIL}">{EMAIL}</a>. {escape(f["name"])} collects no data: see the <a href="{{up}}privacy.html">privacy policy</a>.</p>''')
 
@@ -137,8 +140,44 @@ def privacy():
 <p>{BRAND}. Email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>''')
 
 
+def install():
+    page('install.html', f'Install a watch face · {BRAND}', f'How to install, set and customise a {BRAND} watch face on Wear OS.', f'''<h1>Install a watch face</h1>
+<div class="rule"></div>
+<p class="lead">Our watch faces run on the watch itself. Installing one does not switch your watch face: you choose it on the watch afterwards.</p>
+
+<h2>1. Install</h2>
+<ul>
+  <li><strong>From your phone:</strong> open the watch face in Google Play, tap the arrow next to Install (or Buy) and make sure your watch is ticked.</li>
+  <li><strong>From your watch:</strong> open Play Store on the watch, search for the watch face and install it.</li>
+</ul>
+<p>It can take a few minutes before the watch face reaches the watch. The phone app may say it is installed before the watch has it.</p>
+
+<h2>2. Set it as your watch face</h2>
+<ul>
+  <li><strong>On the watch:</strong> touch and hold the current watch face, swipe to the end and tap <em>Add</em> (+), then choose the watch face.</li>
+  <li><strong>Samsung Galaxy Watch:</strong> or open the Galaxy Wearable app on your phone, tap <em>Watch faces</em> and choose it.</li>
+  <li><strong>Google Pixel Watch:</strong> or open the Pixel Watch app on your phone, tap <em>Watch faces</em> and add it.</li>
+</ul>
+
+<h2>3. Customise</h2>
+<p>Touch and hold the watch face and tap <em>Customise</em> (or the pencil). Swipe between colours, surfaces and the other options. On the data page, tap a field to choose what it shows: any app on your watch can provide data. Galaxy Wearable and the Pixel Watch app can customise it from your phone too.</p>
+
+<h2>Always-on display</h2>
+<p>The always-on look appears only when <em>Always-on display</em> is turned on in your watch's display settings. The style and brightness are chosen in the watch face's own options.</p>
+
+<h2>Troubleshooting</h2>
+<ul>
+  <li><strong>Not offered for my watch:</strong> our watch faces need Wear OS 5 or newer and a round screen. Check under Settings › System › About › Versions.</li>
+  <li><strong>Installed, but not in the list:</strong> wait a few minutes, or restart the watch. Then try Play Store on the watch itself.</li>
+  <li><strong>Empty fields or dashes:</strong> the app providing the data may need permission (heart rate, location for weather), or has no data yet. Open that app on the watch once.</li>
+  <li><strong>Weather missing:</strong> weather comes from your watch's weather app, which needs a connection to your phone or the internet.</li>
+</ul>
+<p>Still stuck? Email <a href="mailto:{EMAIL}">{EMAIL}</a> with your watch model.</p>''')
+
+
 if __name__ == '__main__':
     home()
     for f in DATA['faces']:
         face(f)
+    install()
     privacy()
