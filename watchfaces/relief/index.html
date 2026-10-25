@@ -13,8 +13,9 @@
 <body>
 <header>
   <a class="brand" href="../../">Primowatches</a>
-  <nav><a href="../../#watchfaces">Watch faces</a><a href="../../install.html">Install</a><a href="../../privacy.html">Privacy</a><a href="../../#contact">Contact</a></nav>
+  <nav><details class="menu"><summary>Wear OS</summary><div><a href="../../#watchfaces">All watch faces</a><a href="../../watchfaces/relief/">Relief</a><a href="../../install.html">Install a watch face</a></div></details><details class="menu"><summary>Garmin</summary><div><a href="../../garmin/strength/">Strength</a><a href="../../garmin/strength/#guide">Strength user guide</a></div></details><a href="../../privacy.html">Privacy</a><a href="../../#contact">Contact</a></nav>
 </header>
+<script>document.addEventListener('click', e => document.querySelectorAll('nav details[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; }));</script>
 <main>
 <p class="crumb"><a href="../../#watchfaces">Watch faces</a> /</p>
 <h1>Relief</h1>

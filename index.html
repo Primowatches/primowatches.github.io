@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Primowatches: watch faces for Wear OS</title>
-<meta name="description" content="Watch faces for Wear OS.">
+<title>Primowatches: watch faces for Wear OS and Garmin apps</title>
+<meta name="description" content="Watch faces for Wear OS and apps for Garmin watches.">
 <meta name="google-site-verification" content="F2sSLz3GuPwt_C3BkwWSnTi81Ip2itNgBJjz8FT71gg">
 <meta name="google-site-verification" content="0I45dqfzrLrNNodKksoEg44V1YR8bqElhHY7i-KYdTE">
 <link rel="icon" href="assets/icon.png">
@@ -13,19 +13,30 @@
 <body>
 <header>
   <a class="brand" href="./">Primowatches</a>
-  <nav><a href="./#watchfaces">Watch faces</a><a href="install.html">Install</a><a href="privacy.html">Privacy</a><a href="./#contact">Contact</a></nav>
+  <nav><details class="menu"><summary>Wear OS</summary><div><a href="./#watchfaces">All watch faces</a><a href="watchfaces/relief/">Relief</a><a href="install.html">Install a watch face</a></div></details><details class="menu"><summary>Garmin</summary><div><a href="garmin/strength/">Strength</a><a href="garmin/strength/#guide">Strength user guide</a></div></details><a href="privacy.html">Privacy</a><a href="./#contact">Contact</a></nav>
 </header>
+<script>document.addEventListener('click', e => document.querySelectorAll('nav details[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; }));</script>
 <main>
 <h1>Primowatches</h1>
 <div class="rule"></div>
-<p class="lead">Watch faces for Wear OS.</p>
+<p class="lead">Watch faces for Wear OS and apps for Garmin watches.</p>
 
-<h2 id="watchfaces">Watch faces</h2>
+<h2 id="watchfaces">Wear OS watch faces</h2>
 <div class="grid">
   <a class="card" href="watchfaces/relief/">
     <img src="watchfaces/relief/cover.webp" alt="Relief in orange" width="600" height="600" loading="lazy">
     <strong>Relief</strong>
     <span>Milled digital watch face</span>
+    <em>Coming soon</em>
+  </a>
+</div>
+
+<h2 id="garmin">Garmin apps</h2>
+<div class="grid">
+  <a class="card" href="garmin/strength/">
+    <img src="garmin/strength/cover.webp" alt="Strength rest timer on the bezel" width="600" height="600" loading="lazy">
+    <strong>Strength</strong>
+    <span>Gym set logger</span>
     <em>Coming soon</em>
   </a>
 </div>

@@ -1,7 +1,36 @@
 {
   "brand": "Primowatches",
-  "tagline": "Watch faces for Wear OS.",
+  "tagline": "Watch faces for Wear OS and apps for Garmin watches.",
   "email": "primowatch3s@gmail.com",
+  "garmin": [
+    {
+      "slug": "strength",
+      "name": "Strength",
+      "tagline": "Gym set logger",
+      "status": "coming",
+      "store": "",
+      "intro": "A gym set logger for Garmin watches. Pick a program, lift, press OK: the set is logged and the rest timer starts. Works offline, with no account and no companion app.",
+      "images": [
+        ["cover.webp", "Strength rest timer on the bezel"],
+        ["workout.webp", "Next set with weight, reps and last session"],
+        ["menu.webp", "Workout menu: undo, +30 s rest, skip"],
+        ["summary.webp", "Workout summary"],
+        ["chart.webp", "Progress chart on the watch"],
+        ["home.webp", "Strength home screen"]
+      ],
+      "features": [
+        "One press per set: OK logs the weight and reps and starts the rest",
+        "Rest countdown on the bezel, with vibration, sound and a heads-up before it ends",
+        "Four ready-made programs plus four of your own, edited on the watch or the phone",
+        "121 exercises by muscle group, plus 12 custom exercises",
+        "Weight suggestions from your last session, one step heavier when you hit every rep",
+        "Personal records, workout history and progress charts on the watch",
+        "You choose what syncs to Garmin Connect",
+        "Eight accent colours, 34 languages, round, square and two-colour displays"
+      ],
+      "requires": "Garmin watches with Connect IQ 3.2 or newer: Forerunner, fēnix, epix, Enduro, Instinct, Venu, vívoactive, MARQ, Descent, D2 and Approach models"
+    }
+  ],
   "faces": [
     {
       "slug": "relief",

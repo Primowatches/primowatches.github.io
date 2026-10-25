@@ -32,3 +32,30 @@ footer { color: var(--muted); font-size: .9rem; padding-top: 32px; padding-botto
 .crumb { margin: 32px 0 -36px; color: var(--muted); }
 .crumb a { color: var(--muted); text-decoration: none; }
 .dials img { border-radius: 0; }
+nav { display: flex; align-items: center; flex-wrap: wrap; }
+nav details { position: relative; margin-left: 20px; }
+nav summary { color: var(--muted); cursor: pointer; list-style: none; }
+nav summary::-webkit-details-marker { display: none; }
+nav summary::after { content: ""; display: inline-block; width: 6px; height: 6px; margin: 0 2px 3px 8px; border: solid currentColor; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); }
+nav summary:hover, nav details[open] summary { color: var(--accent); }
+nav details > div { position: absolute; left: 0; top: calc(100% + 12px); z-index: 10; min-width: 220px; padding: 8px; background: #141416; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 12px 32px rgba(0, 0, 0, .5); }
+nav details > div a { display: block; margin: 0; padding: 8px 12px; border-radius: 8px; color: var(--fg); }
+nav details > div a:hover { background: var(--line); color: var(--accent); }
+@media (max-width: 520px) {
+  header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  nav details, nav a { margin-left: 0; margin-right: 16px; }
+}
+h3 { font-size: 1.15rem; margin: 36px 0 8px; scroll-margin-top: 16px; }
+h2 { scroll-margin-top: 16px; }
+ol { padding-left: 1.4em; }
+code { font: .9em ui-monospace, SFMono-Regular, Consolas, monospace; background: var(--line); padding: 2px 6px; border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin: 32px 0; }
+.shots img { width: 100%; height: auto; border-radius: 16px; display: block; }
+.ghost { display: inline-block; padding: 10px 18px; margin-left: 8px; color: var(--accent); text-decoration: none; font-weight: 600; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
+.toc a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--fg); text-decoration: none; font-size: .9rem; }
+.toc a:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 520px) { table { font-size: .85rem; } th, td { padding: 8px 6px; } .ghost { margin-left: 0; padding-left: 0; } }
