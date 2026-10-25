@@ -249,8 +249,8 @@ def strength_guide():
 <p><strong>Change a program on the watch:</strong> highlight it in the Program list and <strong>hold MENU</strong>. You get <strong>Exercises</strong> (add, change, or hold MENU on an exercise to remove it), <strong>Rename</strong> and <strong>Delete program</strong> (press twice).</p>
 <p><strong>On your phone:</strong> open Garmin Connect or the Connect IQ app, find Strength among your watch's apps and open <strong>Settings</strong>. Each program has a <strong>Program name</strong> field and a list of exercises with sets, reps, rest (seconds) and start weight (decimals such as 22.5 kg are allowed).</p>
 <ul>
-  <li>Each row has a read-only <strong>Exercise name</strong>, such as "1. BENCH PRESS", filled in by the watch. A row you have just added gets its name once the watch has received the settings: close and reopen the settings to see it.</li>
-  <li><strong>Change the order:</strong> open an exercise, set <strong>Order</strong> to the position you want (1 for the top) and save. The watch moves it there and renumbers the rest. Garmin's settings list has no drag and drop.</li>
+  <li>Each row has an <strong>Exercise name</strong>, such as "1. BENCH PRESS", filled in and overwritten by the watch: you can leave it alone. A row you have just added gets its name once the watch has received the settings: close and reopen the settings to see it.</li>
+  <li><strong>Change the order:</strong> open an exercise, set <strong>Order</strong> to the position you want (1 for the top, 0 to leave it) and save. The watch moves it there and renumbers the rest. Garmin's settings list has no drag and drop.</li>
 </ul>
 <p>Phone settings are only available when Strength is installed from the Connect IQ Store.</p>
 

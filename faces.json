@@ -7,8 +7,8 @@
       "slug": "strength",
       "name": "Strength",
       "tagline": "Gym set logger",
-      "status": "coming",
-      "store": "",
+      "status": "live",
+      "store": "https://apps.garmin.com/apps/6ee3f217-6988-4f0f-89ec-b629f2a9a9b9",
       "intro": "A gym set logger for Garmin watches. Pick a program, lift, press OK: the set is logged and the rest timer starts. Works offline, with no account and no companion app.",
       "images": [
         ["cover.webp", "Strength rest timer on the bezel"],
